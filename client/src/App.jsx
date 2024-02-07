@@ -7,7 +7,8 @@ import Search from './pages/Search';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import Projects from './pages/Projects';
-//import Header from '../components/Header'
+import Header from './components/Header'
+
 
 
 
@@ -17,7 +18,7 @@ export default function App() {
   return (
     <BrowserRouter>
 
-
+   <Header />
     
     <Routes>
       <Route path='/' element={<Home />} />
@@ -27,6 +28,7 @@ export default function App() {
       <Route path='/projects' element={<Projects />} />
       <Route path='/search' element={<Search />} />
       <Route path='/dashboard' element={<Dashboard />} />
+     
 
 
       
