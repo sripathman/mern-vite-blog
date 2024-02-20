@@ -1,7 +1,10 @@
 import express from 'express';
+
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import userRoutes from './routes/user.route.js';
+import authRoutes from './routes/auth.route.js'
+
 dotenv.config();
 mongoose.connect(process.env.MONGO).then(() => {
   console.log('MongoDb is connected');
@@ -9,8 +12,12 @@ mongoose.connect(process.env.MONGO).then(() => {
 .catch((err) => {
   console.log(err);
 });
+//mongoose.connect ('mongodb+srv://sripathmann:jdk1234sdk@mern-blog.nzjcr0b.mongodb.net/mern-blog?retryWrites=true&w=majority')
+
 const app = express();
+app.use(express.json());
 app.listen(3000, ()=>{
   console.log('server is running on port 3000');
 })
 app.use('/api/user', userRoutes);
+app.use('/api/auth', authRoutes);
