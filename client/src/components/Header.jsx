@@ -13,7 +13,7 @@ export default function Header() {
    
     <Navbar className='border-b-2'>
     <Link to='/' className='self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white'>
-      <span className='px-2 py-1 bg-gradient-to-r from-purple-500 from-50 via-cyan-500 via-30% to-emerald-500 to-70% rounded-lg text-white '>
+      <span className='px-2 py-1 bg-gradient-to-r from-purple-500 from-300 via-yellow-700 via-30% to-teal-300 to-70% rounded-lg text-white '>
         Pathman's
       </span>
       Blog
