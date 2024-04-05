@@ -36,6 +36,7 @@ export default function SignUp() {
       setErrorMessage(error.message);
       setLoading(false);
     }
+  
   };
   return (
     <div className='min-h-screen mt-20'>

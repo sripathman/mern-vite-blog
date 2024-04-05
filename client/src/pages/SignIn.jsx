@@ -37,6 +37,7 @@ export default function SignIn() {
     } catch (error) {
       dispatch(signInFailure(error.message));
     }
+  
   };
   return (
     <div className='min-h-screen mt-20'>
